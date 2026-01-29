@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="e papieros – ekskluzywne produkty do e papieros, e-liquidy i akcesoria. Odkryj wyjątkowe smaki w naszej kolekcji.">
+    <title>Smokify - Boost Your Flavour</title>
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Nicotine  Banner -->
+    <div id="ageModal" class="modal">
+        <div class="modal-content">
+            <h2>Czy masz ukończone 18 lat?</h2>
+            <div class="buttons">
+                <button id="yesBtn">Tak</button>
+                <button id="noBtn">Nie</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nicotine Warning Banner -->
+    <div class="warning-banner" id="warningBanner">
+        <div class="warning-content">
+            <p>
+                OSTRZEŻENIE: TEN PRODUKT ZAWIERA NIKOTYNĘ. NIKOTYNA JEST SUBSTANCJĄ
+                UZALEŻNIAJĄCĄ.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="https://www.dbucha.com/" class="logo">
+                <span class="logo-text">Smokify</span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="https://www.dbucha.com/" class="nav-link active">Strona Główna</a></li>
+                    <li><a href="https://www.dbucha.com/" class="nav-link">Produkty</a></li>
+                    <li><a href="https://www.dbucha.com/" class="nav-link">O nas</a></li>
+                    <li><a href="https://www.dbucha.com/" class="nav-link">Blog</a></li>
+                    <li><a href="https://www.dbucha.com/" class="nav-link">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-discount">
+                    najlepsze jednorazówki</span>
+                <h1 class="hero-title">NADAJ SMAKOWI <br>NOWĄ ENERGIĘ</h1>
+                <p class="hero-subtitle">Odkryj doskonałe wrażenia e-papieros z naszą ekskluzywną kolekcją e-liquidów i
+                    urządzeń najwyższej jakości.</p>
+                <a href="https://www.dbucha.com/" class="btn btn-primary">KUP TERAZ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Banners -->
+    <section class="promo-banners">
+        <div class="container">
+            <div class="promo-grid">
+                <div class="promo-card promo-ejuice">
+                    <div class="promo-content">
+                        <span class="promo-label">Wybieraj spośród 400+ smaków</span>
+                        <h2 class="promo-title"> e-liquid</h2>
+                    </div>
+                    <div class="promo-image">
+                        <img src="images/MerryMi-Panda-X-40K-Polska-Jednorazowki.jpg" alt="E-juice products">
+                    </div>
+                </div>
+                <div class="promo-card promo-starter">
+                    <div class="promo-content">
+                        <span class="promo-label">Premium w jednym zestawie</span>
+                        <h2 class="promo-title">e papieros</h2>
+                    </div>
+                    <div class="promo-image">
+                        <img src="images/JNR-RageGorilla-55K-Polska-Jednorazówki.jpg" alt="Starter kit products">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="product-tabs">
+                <button class="tab-btn active" data-tab="arrivals">MerryMi</button>
+                <button class="tab-btn" data-tab="sellers">JNR</button>
+                <button class="tab-btn" data-tab="trending">Fumot</button>
+                <button class="tab-btn" data-tab="sale">Adalya</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-categories="all arrivals">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/MerryMi_Blade_30K_Polska_Jednorazowki_E_papieros_Strawberry_Raspberry.png"
+                            alt="MerryMi_Blade_30K_Polska_Jednorazowki_E_papieros_Strawberry_Raspberry">
+                        <div class="product-actions">
+                        </div>
+                        <a href="https://www.dbucha.com/collections/jednorazowki" class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">MerryMi Blade 30K 5%</h3>
+                        <div class="product-price">
+                            <span class="price-new">30000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all arrivals ">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/MerryMi_M_Mecha_16K_Polska_Jednorazowki_E_papieros_Cactus_Candy.png"
+                            alt="MerryMi_M_Mecha_16K_Polska_Jednorazowki_E_papieros_Cactus_Candy">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">MerryMi M-Mecha 16K 3%</h3>
+                        <div class="product-price">
+                            <span class="price-new">16000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product-card" data-categories="all arrivals">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/MerryMi_Mecha_Pro_35K_Polska_Jednorazowki_E_papieros_Black_Mint.png"
+                            alt="MerryMi_Mecha_Pro_35K_Polska_Jednorazowki_E_papieros_Black_Mint">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">MerryMi Mecha Pro 35K 5%</h3>
+                        <div class="product-price">
+                            <span class="price-new">35000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all arrivals">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/MerryMi_Wiflux_24K_Polska_Jednorazowki_E_papieros_Lush_Ice_Raspberry.png"
+                            alt="MerryMi_Wiflux_24K_Polska_Jednorazowki_E_papieros_Lush_Ice_Raspberry">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">MerryMi WiFlux 24K 5%</h3>
+                        <div class="product-price">
+                            <span class="price-new">24000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all arrivals">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/Merry-Mi-Panda20K-E-papierosjednorazowy-GrapefruitFig.png"
+                            alt="Merry-Mi-Panda20K-E-papierosjednorazowy-GrapefruitFig">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">MerryMi MK20000 20K 5%</h3>
+                        <div class="product-price">
+                            <span class="price-new">20000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-categories="all sellers">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/JNR_Falcon_Bar_48K_Polska_Jednorazowki_E_papieros_Watermelon_Ice.png"
+                            alt="JNR_Falcon_Bar_48K_Polska_Jednorazowki_E_papieros_Watermelon_Ice">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">JNR Falcon Bar 48K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">48000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all sellers">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/JNR_Falcon_Pro_28K_Polska_Jednorazowki_E_papieros_Blueberry_Ice.png"
+                            alt="JNR_Falcon_Pro_28K_Polska_Jednorazowki_E_papieros_Blueberry_Ice">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">JNR Falcon Pro 28K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">28000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all sellers">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/JNR_Leopard_40K_Polska_Jednorazowki_E_papieros_Mixed_Berry_40000.png"
+                            alt="JNR_Leopard_40K_Polska_Jednorazowki_E_papieros_Mixed_Berry_40000">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">JNR Leopard 40K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">40000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all sellers">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/JNR_Mega_Box_25K_Polska_Jednorazowki_E_papieros_Strawberry_Raspberry.png"
+                            alt="Duis consequat purus">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">JNR Mega Box 25K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">25000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all sellers">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/JNR_MegaBox_Pro_55K_Polska_Jednorazowki_E_papieros_Sour_Cherry_Ice.png"
+                            alt="JNR_MegaBox_Pro_55K_Polska_Jednorazowki_E_papieros_Sour_Cherry_Ice">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">JNR Mega Box Pro 50K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">50000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all sellers">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/JNR_RageGorilla_55K_Polska_Jednorazowki_E_papieros_Strawberry_Ice.png"
+                            alt="JNR_RageGorilla_55K_Polska_Jednorazowki_E_papieros_Strawberry_Ice">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">JNR Rage Gorilla 55K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">55000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all sellers">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/JNR_Triple_110K_Polska_Jednorazowki_E_papieros_Double_Apple_Watermelon.png"
+                            alt="JNR_RageGorilla_55K_Polska_Jednorazowki_E_papieros_Strawberry_Ice">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">JNR Triple 110K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">110000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-categories="all trending">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/Fumot_Digital_Box_12K_Polska_Jednorazowki_E_papieros_Blueberry_Raspberry (1).png"
+                            alt="Fumot Digital Box 12K Polska Jednorazowki E-papieros Blueberry Raspberry">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fumot Digital Box 12K </h3>
+                        <div class="product-price">
+                            <span class="price-new">12000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all trending">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/Fumot_Digital_Monkey_40K_Polska_Jednorazowki_E_papieros_Pink_Lemonade.png"
+                            alt="Fumot Digital Monkey 40K Polska Jednorazowki E-papieros Pink Lemonade">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fumot Digital Monkey 40K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">40000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all trending">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/Fumot_Leopard_40K_Polska_Jednorazowki_E_papieros_Black_Dragon_Ice.png"
+                            alt="Fumot Leopard 40K Polska Jednorazowki E-papieros Black Dragon Ice">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fumot Leopard 40K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">40000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all trending">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/Fumot_T9000_Polska_Jednorazowki_E_papieros_Watermelon_Ice_9000_Buchow.png"
+                            alt="Fumot T9000 Polska Jednorazowki E-papieros Watermelon Ice 9000 Buchow">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fumot T9000 9K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">9000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card" data-categories="all trending">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/Fumot_Tornado_15K_Polska_Jednorazowki_Epapieros_Lemon_Lime_15000.png"
+                            alt="Fumot Tornado 15K Polska Jednorazowki Epapieros Lemon Lime 15000">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fumot Tornado 15K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">15000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all trending">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/Fumot_Tornado_30K_Music_Polska_Jednorazowki_E_papieros_Banana_Ice.png"
+                            alt="Fumot Tornado 30K Music Polska Jednorazowki E-papieros Banana Ice">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fumot Tornado 30K Music 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">30000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all trending">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/RAndM_Tornado_9K_Polska_Jednorazowki_E_papieros_Mr_Blue_9000_Buchow.png"
+                            alt="RAndM Tornado 9K Polska Jednorazowki E-papieros Mr Blue 9000 Buchow">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">RAndM Tornado 9K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">9000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-categories="all sale">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/Adalya_AD10000_10K_Polska_Jednorazowki_E_papieros_Love66_10000_Buchow.png"
+                            alt="Adalya AD10000 10K Polska Jednorazowki E-papieros Love66 10000 Buchow">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Adalya AD10000 10K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">10000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all sale">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/Adalya_ADL16000_16K_Polska_Jednorazowki_E_papieros_Blue_Ice_16000.png"
+                            alt="Adalya ADL16000 16K Polska Jednorazowki E-papieros Blue Ice 16000">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Adalya ADL16000 16K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">16000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all sale">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/Adalya_ADL_PRO360_20K_Polska_Jednorazowki_E_papieros_Bagdadi_20000.png"
+                            alt="Adalya ADL PRO360 20K Polska Jednorazowki E-papieros Bagdadi 20000">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Adalya ADL PRO360 20K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">20000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-categories="all sale">
+                    <span class="product-badge">Jednorazówki</span>
+                    <div class="product-image">
+                        <img src="images/Adalya_Aurora_40000_40K_Polska_Jednorazowki_E_papieros_Lady_Killer.png"
+                            alt="Adalya Aurora 40000 40K Polska Jednorazowki E-papieros Lady Killer">
+                        <div class="product-actions">
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                            </svg>
+                            KUP TERAZ
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Adalya Aurora 40K 2%</h3>
+                        <div class="product-price">
+                            <span class="price-new">40000 Buchów</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Banners Section -->
+    <section class="category-banners">
+        <div class="container">
+            <div class="category-grid">
+                <!-- Large banners -->
+                <div class="category-card category-large category-mods">
+                    <div class="category-content">
+                        <span class="category-label">Green Apple</span>
+                        <h2 class="category-title">MerryMi Panda X</h2>
+                        <a href="https://www.dbucha.com/products/jednorazowki-merrymi-panda-x-40k-buchow"
+                            class="btn btn-outline">KUP TERAZ</a>
+                    </div>
+                    <div class="category-image">
+                        <img src="images/MerryMi-Panda-X-40K-Polska-Jednorazowki-E-papieros-Green-Apple-40000-Buchow.png"
+                            alt="MerryMi-Panda-X-40K-Polska-Jednorazowki">
+                    </div>
+                </div>
+                <div class="category-card category-large category-pen">
+                    <div class="category-content">
+                        <span class="category-label">Kiwi Watermelon Ice</span>
+                        <h2 class="category-title">JNR RageGorilla</h2>
+                        <a href="https://www.dbucha.com/products/jnr-ragegorilla-55k-buchow" class="btn btn-outline">KUP
+                            TERAZ</a>
+                    </div>
+                    <div class="category-image">
+                        <img src="images/JNR-RageGorilla-55K-Polska-Jednorazówki-Epapieros-KiwiWatermelonIce-55000Buchów.png"
+                            alt="JNR RageGorilla">
+                    </div>
+                </div>
+
+                <!-- Small banners -->
+                <div class="category-card category-small category-tanks">
+                    <div class="category-content">
+                        <span class="category-label">Blueberry Cherry Cranberry</span>
+                        <h2 class="category-title">Fumot T9000</h2>
+                        <a href="https://www.dbucha.com/products/fumot-t9000-buchow" class="btn btn-outline">KUP
+                            TERAZ</a>
+                    </div>
+                    <div class="category-image">
+                        <img src="images/Fumot-T9000-Polska-Jednorazówki-Epapieros-BlueberryCherryCranberry-9000Buchów.png"
+                            alt="Fumot T9000">
+                    </div>
+                </div>
+                <div class="category-card category-small category-discount">
+                    <div class="category-content">
+                        <span class="category-label">African Crush</span>
+                        <h2 class="category-title">Adalya ADL PRO360</h2>
+                        <a href="https://www.dbucha.com/products/jednorazowki-adalya-adl-pro360-20k-buchow"
+                            class="btn btn-outline-dark">KUP TERAZ</a>
+                    </div>
+                    <div class="category-image">
+                        <img src="images/Adalya-ADL-PRO360-20K-Polska-Jednorazówki-E-papieros-African-Crush-20000-Buchów.png"
+                            alt="Adalya-ADL-PRO360-20K-Polska-Jednorazówki">
+                    </div>
+                </div>
+                <div class="category-card category-small category-accessories">
+                    <div class="category-content">
+                        <span class="category-label">Watermelon Ice</span>
+                        <h2 class="category-title">Blur 15000</h2>
+                        <a href="https://www.dbucha.com/products/blur-15000-15k-buchow" class="btn btn-outline">KUP
+                            TERAZ</a>
+                    </div>
+                    <div class="category-image">
+                        <img src="images/Blur15000-15K-Polska-Jednorazówki-Epapieros-WatermelonIce-15000-Buchów.png"
+                            alt="Blur15000-15K-Polska-Jednorazówki">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="best-sellers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Polecane Produkty</h2>
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev" id="prevBtn" aria-label="Previous">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button class="carousel-btn next" id="nextBtn" aria-label="Next">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="sellers-carousel" id="sellersCarousel">
+                <div class="sellers-track" id="sellersTrack">
+                    <!-- Product 1 -->
+                    <div class="seller-card">
+                        <div class="seller-image">
+                            <img src="images/MerryMi_Panda_X_40K_Polska_Jednorazowki_E_papieros_Watermelon_B.png"
+                                alt="MerryMi_Panda_X_40K_Polska_Jednorazowki_E_papieros_Watermelon_B">
+                        </div>
+                        <div class="seller-info">
+                            <h3 class="seller-name">MerryMi Panda X 40K 5%</h3>
+                            <span class="seller-price">40000 Buchów</span>
+                            <a href="https://www.dbucha.com/products/jednorazowki-merrymi-panda-x-40k-buchow"
+                                class="seller-buy-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                                </svg>
+                                KUP TERAZ
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="seller-card">
+                        <div class="seller-image">
+                            <img src="images/Al_Fakher_Crown_Bar_8000_E_Papieros_jednorazowy_Mango_ice.png"
+                                alt="Al_Fakher_Crown_Bar_8000">
+                        </div>
+                        <div class="seller-info">
+                            <h3 class="seller-name">Al Fakher Crown Bar 8K 2%</h3>
+                            <div class="seller-price">
+                                <span class="price-new">8000 Buchów</span>
+                            </div>
+                            <a href="https://www.dbucha.com/products/al-fakher-crown-bar-pro-8000-buchow"
+                                class="seller-buy-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                                </svg>
+                                KUP TERAZ
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="seller-card">
+                        <div class="seller-image">
+                            <img src="images/Fumot_Tornado_25K_Polska_Jednorazowki_E_papieros_Banana_Ice_25000.png"
+                                alt="Fumot_Tornado_25K">
+                        </div>
+                        <div class="seller-info">
+                            <h3 class="seller-name">Fumot Tornado 25K 2%</h3>
+                            <span class="seller-price">25000 Buchów</span>
+                            <a href="https://www.dbucha.com/products/fumot-tornado-25k-buchow" class="seller-buy-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                                </svg>
+                                KUP TERAZ
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="seller-card">
+                        <div class="seller-image">
+                            <img src="images/MerryMi_Wiflux_24K_Polska_Jednorazowki_E_papieros_Apple_Peach_24000.png"
+                                alt="MerryMi_Wiflux_24K">
+                        </div>
+                        <div class="seller-info">
+                            <h3 class="seller-name">MerryMi Wiflux 24K 5%</h3>
+                            <div class="seller-price">
+                                <span class="price-new">24000 Buchów</span>
+                            </div>
+                            <a href="https://www.dbucha.com/products/merrymi-wiflux-24k-buchow" class="seller-buy-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                                </svg>
+                                KUP TERAZ
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="seller-card">
+                        <div class="seller-image">
+                            <img src="images/Vozol_Rave_40K_Polska_Jednorazowki_E_papieros_Blueberry_Watermelon.png"
+                                alt="Vozol_Rave_40K">
+                        </div>
+                        <div class="seller-info">
+                            <h3 class="seller-name">Vozol Rave 40K 5%</h3>
+                            <span class="seller-price">40000 Buchów</span>
+                            <a href="https://www.dbucha.com/products/vozol-rave-40k-buchow" class="seller-buy-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                                </svg>
+                                KUP TERAZ
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="seller-card">
+                        <span class="seller-badge">3 w 1</span>
+                        <div class="seller-image">
+                            <img src="images/JNR_Triplee_110K_Polska_Jednorazowki_E_papieros_Double_Apple_Watermelon.png"
+                                alt="JNR_Triplee_110K">
+                        </div>
+                        <div class="seller-info">
+                            <h3 class="seller-name">JNR Triplee 110K 2%</h3>
+                            <span class="seller-price">110000 Buchów</span>
+                            <a href="https://www.dbucha.com/products/jednorazowki-jnr-triple-110k-buchow"
+                                class="seller-buy-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                                </svg>
+                                KUP TERAZ
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="seller-card">
+                        <div class="seller-image">
+                            <img src="images/Fumott_Leopard_40K_Polska_Jednorazowki_E_papieros_Black_Dragon_Ice.png"
+                                alt="Fumott_Leopard_40K">
+                        </div>
+                        <div class="seller-info">
+                            <h3 class="seller-name">Fumott Leopard 40K 2%</h3>
+                            <div class="seller-price">
+                                <span class="price-new">40000 Buchów</span>
+                            </div>
+                            <a href="https://www.dbucha.com/products/fumot-leopard-40k-buchow" class="seller-buy-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                                </svg>
+                                KUP TERAZ
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="seller-card">
+                        <div class="seller-image">
+                            <img src="images/Adalya_ADL16000_16K_Polska_Jednorazowki_E_papieros_Blue_Icee_16000.png"
+                                alt="Adalya_ADL16000_16K">
+                        </div>
+                        <div class="seller-info">
+                            <h3 class="seller-name">Adalya ADL16000 2%</h3>
+                            <span class="seller-price">16000 Buchów</span>
+                            <a href="https://www.dbucha.com/products/adalya-adl-16000-16k-buchow"
+                                class="seller-buy-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                                </svg>
+                                KUP TERAZ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination Dots -->
+            <div class="carousel-pagination" id="carouselPagination">
+                <!-- Dots will be generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Vape Brands Section -->
+    <section class="vape-brands">
+        <div class="container">
+            <h2 class="section-title">Najlepsze marki jednorazówki e papieros</h2>
+            <div class="brands-grid">
+                <a href="https://www.dbucha.com/collections/merrymi-jednorazowki" class="brand-card">
+                    <img src="images/MerryMi.png" alt="MerryMi Brand">
+                </a>
+                <a href="https://www.dbucha.com/collections/jnr-jednorazowki" class="brand-card">
+                    <img src="images/JNR.png" alt="JNR Brand">
+                </a>
+                <a href="https://www.dbucha.com/collections/fumot-jednorazowki" class="brand-card">
+                    <img src="images/Fumot.png" alt="Fumot Brand">
+                </a>
+                <a href="https://www.dbucha.com/collections/adalya-jednorazowki" class="brand-card">
+                    <img src="images/Adalya.jpeg" alt="Adalya Brand">
+                </a>
+                <a href="https://www.dbucha.com/collections/ghost-jednorazowki" class="brand-card">
+                    <img src="images/Ghost.png" alt="Ghost Brand">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us">
+        <div class="container why-us-container">
+            <div class="why-us-content">
+                <span class="why-us-label">Premium, które robi różnicę</span>
+                <h2 class="why-us-title">Dokładnie to,<br>czego oczekujesz</h2>
+                <p class="why-us-text">
+                    Zależy nam na dostarczaniu produktów najwyższej jakości wraz z szybką i niezawodną dostawą na
+                    terenie Polski. Każdy produkt w naszej ofercie jest starannie wyselekcjonowany, aby zagwarantować
+                    autentyczność, wysoką wydajność oraz niezrównane doznania z e papieros.
+                </p>
+                <a href="https://www.dbucha.com/collections/jnr-jednorazowki" class="btn btn-outline-dark">KUP TERAZ</a>
+            </div>
+            <div class="why-us-image">
+                <img src="images/Gemini_Generated_Image_9z4p849z4p849z4p.png" alt="Experience speaks louder">
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="customer-reviews" id="customerReviews">
+        <div class="container">
+            <h2 class="section-title">OPINIE KLIENTÓW</h2>
+            <div class="reviews-wrapper">
+                <div class="reviews-grid">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="review-product">
+                            <img src="images/MerryMi-review.jpg" alt="MerryMi">
+                        </div>
+                        <div class="review-header">
+                            <div class="reviewer-avatar">
+                                <span class="avatar-initials">EP</span>
+                            </div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Ewa P.</h4>
+                                <div class="review-rating">
+                                    <i class="rating-icon">★</i><i class="rating-icon">★</i><i
+                                        class="rating-icon">★</i><i class="rating-icon">★</i><i
+                                        class="rating-icon">★</i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Długo szukałam tego produktu w internecie i muszę przyznać, że tutaj
+                            cena jest po prostu najniższa. Często przepłacałam w sklepach stacjonarnych, a tutaj mam to
+                            samo za połowę kwoty. Na pewno będę regularnie zamawiać, bo portfel mi za to podziękuje!."
+                        </p>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="review-product">
+                            <img src="images/JNR-review.jpg" alt="JNR">
+                        </div>
+                        <div class="review-header">
+                            <div class="reviewer-avatar">
+                                <span class="avatar-initials">LK</span>
+                            </div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Lidia K.</h4>
+                                <div class="review-rating">
+                                    <i class="rating-icon">★</i><i class="rating-icon">★</i><i
+                                        class="rating-icon">★</i><i class="rating-icon">★</i><i
+                                        class="rating-icon">★</i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"🔥Bezkonkurencyjna cena! Szybka dostawa InPost w 3 dni. Obsługa klienta
+                            super. Smaki rewelacyjne! 💯"</p>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <div class="review-product">
+                            <img src="images/Fumot-review.jpg" alt="Fumot">
+                        </div>
+                        <div class="review-header">
+                            <div class="reviewer-avatar">
+                                <span class="avatar-initials">JS</span>
+                            </div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Jagoda S.</h4>
+                                <div class="review-rating">
+                                    <i class="rating-icon">★</i><i class="rating-icon">★</i><i
+                                        class="rating-icon">★</i><i class="rating-icon">★</i><i
+                                        class="rating-icon half">★</i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Mój mały luksus w korku. Smak podnosi poziom glamour. ✨"</p>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="review-card">
+                        <div class="review-product">
+                            <img src="images/Adalya-review.jpg" alt="Adalya">
+                        </div>
+                        <div class="review-header">
+                            <div class="reviewer-avatar">
+                                <span class="avatar-initials">KK</span>
+                            </div>
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Katarzyna K.</h4>
+                                <div class="review-rating">
+                                    <i class="rating-icon">★</i><i class="rating-icon">★</i><i
+                                        class="rating-icon">★</i><i class="rating-icon">★</i><i
+                                        class="rating-icon">★</i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Sklep działa bez zarzutu, płatności są szybkie i bezpieczne."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="social">
+            <div class="footer-logo">
+                <a href="https://www.dbucha.com/" class="logo">
+                    <span class="logo-text">Smokify</span>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/dbucha.com_sklep/?igsh=MTJlaXloMm82NjIyeA%3D%3D#">
+                    <svg viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z">
+                            </path>
+                            <path
+                                d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z">
+                            </path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=61578129732195">
+                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"
+                        viewBox="0 0 14.906 32" height="40px">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M14.874,11.167 L14.262,14.207 C14.062,15.208 13.100,15.992 12.072,15.992 L10.000,15.992 L10.000,30.000 C10.000,31.104 9.159,32.000 8.049,32.000 L5.030,32.000 C3.920,32.000 3.017,31.102 3.017,29.999 L3.017,15.992 L2.011,15.992 C0.901,15.992 -0.002,15.095 -0.002,13.991 L-0.002,10.990 C-0.002,9.887 0.901,8.989 2.011,8.989 L3.017,8.989 L3.017,6.003 C3.017,2.716 5.693,0.041 8.994,0.013 C9.015,0.012 9.033,0.001 9.055,0.001 L13.081,0.001 C13.636,0.001 14.000,0.448 14.000,1.000 L14.000,6.000 C14.000,6.553 13.636,7.004 13.081,7.004 L10.061,7.004 L10.060,8.989 L13.079,8.989 C13.645,8.989 14.167,9.228 14.509,9.644 C14.852,10.059 14.985,10.615 14.874,11.167 ZM9.092,10.990 C9.078,10.991 9.067,10.998 9.053,10.998 L9.053,10.998 C8.497,10.997 8.046,10.549 8.047,9.997 L8.047,9.990 C8.047,9.990 8.047,9.990 8.047,9.990 C8.047,9.990 8.047,9.990 8.047,9.990 L8.049,6.003 C8.049,5.450 8.499,5.003 9.055,5.003 L12.074,5.003 L12.074,2.002 L9.094,2.002 C9.077,2.002 9.063,2.011 9.045,2.011 C6.831,2.011 5.030,3.802 5.030,6.003 L5.030,10.005 C5.030,10.558 4.579,11.006 4.023,11.006 C3.996,11.006 3.973,10.992 3.946,10.990 L2.011,10.990 L2.011,13.991 L4.023,13.991 C4.579,13.991 5.030,14.439 5.030,14.992 C5.030,15.044 5.008,15.088 5.000,15.138 L5.000,30.000 L8.049,29.999 L8.049,15.002 C8.049,14.998 8.047,14.995 8.047,14.992 C8.047,14.439 8.497,13.991 9.053,13.991 L12.072,13.991 C12.145,13.991 12.275,13.886 12.288,13.816 L12.857,10.990 L9.092,10.990 Z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div>
+                <a href="https://www.tiktok.com/@dbucha.com">
+                    <svg viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                        fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <defs>
+                                <style>
+                                    .cls-1 {
+                                        fill: black;
+                                        stroke: rgba(255, 255, 255, 0.842);
+                                        stroke-miterlimit: 10;
+                                        stroke-width: 1.89px;
+                                    }
+                                </style>
+                            </defs>
+                            <path class="cls-1"
+                                d="M12.94,1.61V15.78a2.83,2.83,0,0,1-2.83,2.83h0a2.83,2.83,0,0,1-2.83-2.83h0a2.84,2.84,0,0,1,2.83-2.84h0V9.17h0A6.61,6.61,0,0,0,3.5,15.78h0a6.61,6.61,0,0,0,6.61,6.61h0a6.61,6.61,0,0,0,6.61-6.61V9.17l.2.1a8.08,8.08,0,0,0,3.58.84h0V6.33l-.11,0a4.84,4.84,0,0,1-3.67-4.7H12.94Z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-cont">
+            <div class="foot-cont-one">
+                <div class="cont-col">
+                    <a href="https://www.dbucha.com/collections/jnr-jednorazowki">Produkty</a>
+                    <a href="https://www.dbucha.com/collections/merrymi-jednorazowki">MerryMi</a>
+                    <a href="https://www.dbucha.com/collections/jnr-jednorazowki">JNR</a>
+                    <a href="https://www.dbucha.com/collections/fumot-jednorazowki">Fumot</a>
+                    <a href="https://www.dbucha.com/collections/adalya-jednorazowki">Adalya</a>
+                    <a href="https://www.dbucha.com/collections/al-fakher-jednorazowki">Al Fakher</a>
+                    <a href="https://www.dbucha.com/collections/airmez-jednorazowki">AirMez</a>
+                    <a href="https://www.dbucha.com/collections/blur-jednorazowki">Blur</a>
+                    <a href="https://www.dbucha.com/collections/ghost-jednorazowki">Ghost</a>
+                    <a href="https://www.dbucha.com/collections/hayati-jednorazowki">Hayati</a>
+                    <a href="https://www.dbucha.com/collections/vozol-jednorazowki">Vozol</a>
+                </div>
+                <div class="cont-col">
+                    <a href="https://www.dbucha.com" class="active">Strona Główna</a>
+                    <a href="https://www.dbucha.com">O nas</a>
+                    <a href="https://www.dbucha.com">Kontakt</a>
+                    <a href="https://www.dbucha.com">Blog</a>
+                    <a href="https://www.dbucha.com">FAQ</a>
+                </div>
+            </div>
+            <div class="foot-cont-two">
+                <div>
+                    <svg class="contact-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M20 4H4C2.897 4 2 4.897 2 6V18C2 19.103 2.897 20 4 20H20C21.103 20 22 19.103 22 18V6C22 4.897 21.103 4 20 4ZM20 6L12 11L4 6H20ZM4 18V8L12 13L20 8V18H4Z" />
+                    </svg>
+                    <p>info@dbucha.com</p>
+                </div>
+                <div>
+                    <svg class="contact-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M6.62 10.79C8.06 13.74 10.26 15.94 13.21 17.38L15.41 15.18C15.8 14.79 16.37 14.66 16.85 14.82C18.27 15.28 19.8 15.5 21.38 15.5C21.83 15.5 22.18 15.85 22.18 16.3V21.5C22.18 21.95 21.83 22.3 21.38 22.3C10.54 22.3 2.7 14.46 2.7 3.62C2.7 3.17 3.05 2.82 3.5 2.82H8.7C9.15 2.82 9.5 3.17 9.5 3.62C9.5 5.2 9.72 6.73 10.18 8.15C10.34 8.63 10.21 9.2 9.82 9.59L7.62 11.79Z" />
+                    </svg>
+                    <p>+48 573 581 194</p>
+                </div>
+            </div>
+        </div>
+        <div class="foot-cont-three">
+            <div class="city">
+                <p id="city">smokify w Polsce</p>
+            </div>
+            <a href="https://www.dbucha.com/">smokify w Warszawie</a>
+            <a href="https://www.dbucha.com/">smokify w Szczecin​</a>
+            <a href="https://www.dbucha.com/">smokify w Katowice</a>
+            <a href="https://www.dbucha.com/">smokify w Łódź</a>
+            <a href="https://www.dbucha.com/">smokify w Kraków</a>
+            <a href="https://www.dbucha.com/">smokify w Wrocław</a>
+            <a href="https://www.dbucha.com/">smokify w Poznań</a>
+            <a href="https://www.dbucha.com/">smokify w Gdańsk</a>
+            <a href="https://www.dbucha.com/">smokify w Bydgoszcz</a>
+            <a href="https://www.dbucha.com/">smokify w Lublin</a>
+            <a href="https://www.dbucha.com/">smokify w Białystok</a>
+            <a href="https://www.dbucha.com/">smokify w Gdynia</a>
+            <a href="https://www.dbucha.com/">smokify w Częstochowa</a>
+            <a href="https://www.dbucha.com/">smokify w Radom</a>
+            <a href="https://www.dbucha.com/">smokify w Sosnowiec</a>
+            <a href="https://www.dbucha.com/">smokify w Toruń</a>
+            <a href="https://www.dbucha.com/">smokify w Kielce</a>
+            <a href="https://www.dbucha.com/">smokify w Gliwice</a>
+            <a href="https://www.dbucha.com/">smokify w Zabrze</a>
+            <a href="https://www.dbucha.com/">smokify w Olsztyn</a>
+            <a href="https://www.dbucha.com/">smokify w Bielsko-Biała</a>
+            <a href="https://www.dbucha.com/">smokify w Rzeszów</a>
+            <a href="https://www.dbucha.com/">smokify w Rybnik</a>
+            <a href="https://www.dbucha.com/">smokify w Tychy</a>
+            <a href="https://www.dbucha.com/">smokify w Dąbrowa Górnicza</a>
+            <a href="https://www.dbucha.com/">smokify w Płock</a>
+            <a href="https://www.dbucha.com/">smokify w Elbląg</a>
+            <a href="https://www.dbucha.com/">smokify w Opole</a>
+            <a href="https://www.dbucha.com/">smokify w Gorzów Wielkopolski</a>
+            <a href="https://www.dbucha.com/">smokify w Wałbrzych</a>
+        </div>
+        <div class="copyright">
+            <p>© <span id="year"></span> smokify.pl - Jednorazówki w Polsce.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
